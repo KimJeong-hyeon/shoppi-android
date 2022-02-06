@@ -1,10 +1,12 @@
-package com.shoppi.app
+package com.shoppi.app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.shoppi.app.R
+
 // Todo 1/18일 새롭게 배운것들 ( Navigation을 통한 프래그먼트간의 화면이동, Splash화면(인트로 화면) ) -> 두가지를 사용해서 복습 해봐야함
 class MainActivity : AppCompatActivity() {
 

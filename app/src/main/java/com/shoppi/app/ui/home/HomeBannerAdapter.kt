@@ -1,8 +1,7 @@
-package com.shoppi.app
+package com.shoppi.app.ui.home
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,11 +10,15 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.w3c.dom.Text
+import com.shoppi.app.Banner
+import com.shoppi.app.GlideApp
+import com.shoppi.app.R
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
 
-class HomeBannerAdapter : ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(BannerDiffCallback()) {
+class HomeBannerAdapter : ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(
+    BannerDiffCallback()
+) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeBannerViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_home_banner, parent, false)
@@ -38,7 +41,7 @@ class HomeBannerAdapter : ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHo
         private val bannerDetailDiscountPriceLableTextView = view.findViewById<TextView>(R.id.tv_banner_detail_product_discount_price)
         private val bannerDetailPriceLableTextView = view.findViewById<TextView>(R.id.tv_banner_detail_product_price)
 
-        fun bind(banner :Banner) {
+        fun bind(banner : Banner) {
             loadImage(banner.backgroundImageUrl, bannerImageView)
             bannerBadgeTextView.text = banner.badge.label
             bannerBadgeTextView.background = ColorDrawable(Color.parseColor(banner.badge.backgroundColor))

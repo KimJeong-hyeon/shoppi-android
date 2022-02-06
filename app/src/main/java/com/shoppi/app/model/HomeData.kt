@@ -1,7 +1,7 @@
-package com.shoppi.app
+package com.shoppi.app.model
 
-import android.service.quicksettings.Tile
 import com.google.gson.annotations.SerializedName
+import com.shoppi.app.Banner
 
 data class HomeData(
     val title: Title,
