@@ -1,0 +1,76 @@
+{
+  "categories": [
+    {
+      "category_id": "fashion-female",
+      "label": "여성패션",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340930-50c8d4af-6228-49ee-afee-598fd4abff06.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "fashion-male",
+      "label": "남성패션",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340923-0c710cc2-e136-458f-9b58-82ce7625add5.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "kids",
+      "label": "유아동",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340889-cfa377ef-6805-4cec-9a3f-a92ce98247a7.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "electronics",
+      "label": "가전/디지털",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340919-84aa460e-da88-4754-a081-9da4cc5b9172.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "furniture",
+      "label": "가구/인테리어",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340921-97b710c0-363c-408a-b137-253957aaadc1.jpg",
+      "updated": true
+    },
+    {
+      "category_id": "sports",
+      "label": "스포츠레저",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340928-1706346e-930e-492f-8d35-8fad0fa6c00f.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "books",
+      "label": "도서/음",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340916-0b2a95cb-6a39-467b-a97e-ed64cbccb836.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "pets",
+      "label": "반려동물",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340925-24834c5c-951b-49b2-9645-6a8f276c9225.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "car",
+      "label": "자동차",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340918-5b0adc06-b88d-4a29-ac49-eaf69a0845a0.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "fancy-goods",
+      "label": "잡화",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340927-e4583120-be81-4407-846f-e8fcb684758b.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "food",
+      "label": "식품",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340920-1029ac79-25d2-40f8-9e23-67423d02d895.jpg",
+      "updated": false
+    },
+    {
+      "category_id": "beauty",
+      "label": "뷰티",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/83944292/153340905-f28e95d6-149c-4fbc-b953-d123e6891f42.jpg",
+      "updated": true
+    }
+  ]
+}

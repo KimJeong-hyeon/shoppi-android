@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918242906022",
+    "project_id": "shoppi-7e427",
+    "storage_bucket": "shoppi-7e427.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918242906022:android:8864704142db48e8e48967",
+        "android_client_info": {
+          "package_name": "com.shoppi.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918242906022-ki79i9ev1hbi0a3tcr61d3npcubfat2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVK-7m5RKnod2raaHDpO2meBL-H6Hksxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918242906022-ki79i9ev1hbi0a3tcr61d3npcubfat2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
