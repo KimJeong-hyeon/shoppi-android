@@ -11,6 +11,10 @@
     <style name="TextMedium" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/shoppi_black_01</item>
     </style>
+
+    <style name="TextMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
     
     <style name="TextMedium.Purple">
         <item name="android:textColor">@color/shoppi_purple</item>
@@ -58,9 +62,46 @@
         <item name="android:textColor">@color/shoppi_grey_03</item>
     </style>
 
+    <style name="TextCaption1.Grey05">
+        <item name="android:textColor">@color/shoppi_grey_05</item>
+    </style>
+
     <style name="TextCaption2" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">11sp</item>
         <item name="android:textColor">@color/shoppi_black_01</item>
+    </style>
+    
+    <style name="TextCaption2.White">
+        <item name="android:textColor">@color/shoppi_white</item>
+    </style>
+
+    <style name="TextCaption2.White.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextSubitle2.Black02">
+        <item name="android:textColor">@color/shoppi_black_02</item>
+    </style>
+
+    <style name="TextSubitle2.Black02.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubitle2.Purple">
+        <item name="android:textColor">@color/shoppi_purple</item>
+    </style>
+
+    <style name="TextSubitle2.Purple.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubitle1.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ImageView Style -->
+    <style name="Circle">
+        <item name="cornerSize">50%</item>
     </style>
     
 </resources>

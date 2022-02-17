@@ -5,28 +5,50 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.shoppi.app.R
+import com.shoppi.app.common.KEY_CATEGORY_ID
+import com.shoppi.app.common.KEY_CATEGORY_LABEL
+import com.shoppi.app.databinding.FragmentCategoryBinding
+import com.shoppi.app.ui.common.EventObserver
 import com.shoppi.app.ui.common.ViewModelFactory
 
 class CategoryFragment: Fragment() {
 
     private val viewModel: CategoryViewModel by viewModels { ViewModelFactory(requireContext()) }
+    private lateinit var binding: FragmentCategoryBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_category, container, false)
+        binding = FragmentCategoryBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val catergoryAdapter = CategoryAdapter(viewModel)
+        binding.rvCategoryList.adapter = catergoryAdapter
+
         viewModel.items.observe(viewLifecycleOwner) {
-            Log.d("CategoryFragment", "items=$it")
+            catergoryAdapter.submitList(it)
         }
+
+        viewModel.openCategoryEvent.observe(viewLifecycleOwner, EventObserver {
+            openCategoryDetail(it.categoryId, it.label)
+        })
+    }
+    private fun openCategoryDetail(categoryId: String, categoryLabel: String) {
+        // categoryDetail에 데이터를 Bundle객체 형태로 넘겨준다.
+        findNavController().navigate(R.id.action_category_to_categoryDetail, bundleOf(
+            KEY_CATEGORY_ID to categoryId,
+            KEY_CATEGORY_LABEL to categoryLabel
+        ))
     }
 }
