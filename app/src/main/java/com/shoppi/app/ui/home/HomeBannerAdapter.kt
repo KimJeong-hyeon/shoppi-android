@@ -1,21 +1,12 @@
 package com.shoppi.app.ui.home
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.shoppi.app.Banner
-import com.shoppi.app.GlideApp
-import com.shoppi.app.R
 import com.shoppi.app.databinding.ItemHomeBannerBinding
-import java.text.DecimalFormat
-import kotlin.math.roundToInt
 
 class HomeBannerAdapter(private val viewModel: HomeViewModel) : ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(
     BannerDiffCallback()
@@ -45,7 +36,7 @@ class HomeBannerAdapter(private val viewModel: HomeViewModel) : ListAdapter<Bann
 
 class BannerDiffCallback : DiffUtil.ItemCallback<Banner>() {
     override fun areItemsTheSame(oldItem: Banner, newItem: Banner): Boolean {
-        return oldItem.productDetail.productId == newItem.productDetail.productId
+        return oldItem.product.productId == newItem.product.productId
     }
 
     override fun areContentsTheSame(oldItem: Banner, newItem: Banner): Boolean {

@@ -47,9 +47,9 @@ class ProductDetailFragment : Fragment() {
         viewModel.loadProductDetail(productId)
         val descriptionAdapter = ProductDescriptionAdapter()
         binding.rvProductDetail.adapter = descriptionAdapter
-        viewModel.product.observe(viewLifecycleOwner) { product ->
-            binding.product = product
-            descriptionAdapter.submitList(product.descriptions)
+        viewModel.product.observe(viewLifecycleOwner) {
+            binding.product = it
+            descriptionAdapter.submitList(it.descriptions)
         }
     }
 }

@@ -9,7 +9,7 @@ data class Banner(
     val badge: BannerBadge,
     val label: String,
     @SerializedName("product_detail")
-    val productDetail: ProductDetail
+    val product: ProductDetail
 )
 
 data class BannerBadge(

@@ -8,6 +8,9 @@
         <variable
             name="product"
             type="com.shoppi.app.model.ProductDetail" />
+        <variable
+            name="clickListener"
+            type="com.shoppi.app.ui.common.ProductClickListener" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -17,6 +20,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
+        android:onClick="@{()-> clickListener.onProductClick(product.productId)}"
         app:cardCornerRadius="12dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
