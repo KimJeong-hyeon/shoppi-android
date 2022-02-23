@@ -27,6 +27,7 @@ class CategoryTopSellingSectionAdapter: ListAdapter<TopSelling, CategoryTopSelli
             binding.rvCategorySection.adapter = nestedAdapter
         }
 
+
         fun bind(topSelling: TopSelling) {
             binding.title = topSelling.title
             binding.executePendingBindings()

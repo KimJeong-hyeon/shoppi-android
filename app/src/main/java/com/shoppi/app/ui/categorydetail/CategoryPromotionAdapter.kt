@@ -5,8 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.shoppi.app.ProductDetail
+
 import com.shoppi.app.databinding.ItemCategoryPromotionBinding
+import com.shoppi.app.model.ProductDetail
 
 class CategoryPromotionAdapter: ListAdapter<ProductDetail, CategoryPromotionAdapter.CategoryPromotionViewHolder>(ProductDiffCallback()) {
 

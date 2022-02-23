@@ -7,7 +7,7 @@
 
         <variable
             name="product"
-            type="com.shoppi.app.ProductDetail" />
+            type="com.shoppi.app.model.ProductDetail" />
     </data>
 
     <androidx.cardview.widget.CardView
