@@ -7,6 +7,9 @@
         <variable
             name="product"
             type="com.shoppi.app.model.ProductDetail" />
+        <variable
+            name="viewModel"
+            type="com.shoppi.app.ui.productdetail.ProductDetailViewModel" />
 
     </data>
 
@@ -186,6 +189,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 style="@style/TextSubitle1.White.Bold"
+                android:onClick="@{() -> viewModel.addCart(product)}"
                 android:layout_width="186dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="12dp"

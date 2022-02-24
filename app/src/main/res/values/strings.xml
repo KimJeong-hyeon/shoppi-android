@@ -10,4 +10,5 @@
     <string name="unit_dicount_currency">%s원</string>
     <string name="label_category_new">NEW</string>
     <string name="label_cart_purchase_button">선택한 상품 주문하기</string>
+    <string name="description_cart_item_thumbnail">description_cart_item_thumbnail</string>
 </resources>
